@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-lg"
+            >
+              <li><a>Buy</a></li>
+              <li><a>Rent</a></li>
+              <li><a>Sell</a></li>
+              <li><a>Agents</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <!-- logo -->
+          <img src="https://i.ibb.co.com/fVPrTXnh/Wiztec-BD.png" alt="" />
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg">
+            <li><a>Buy</a></li>
+            <li><a>Rent</a></li>
+            <li><a>Sell</a></li>
+            <li><a>Agents</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-2">
+          <a class="text-xm text-[#434953]">Favorite</a>
+          <a
+            class="btn btn-ghost text-sm text-[#EEEBED] rounded-4xl bg-[#59344F]"
+            >Login Now</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- main layout -->
+    <main class="lg:flex gap-6 my-4">
+      <!-- left -->
+      <section class="w-96 pl-2 space-y-4">
+        <!-- budget -->
+        <div class="rounded-xl border border-[#E6E9ED] p-2">
+          <h1 class="text-lg font-bold my-1 border-b border-[#E6E9ED] pb-2">
+            Rent Budge
+          </h1>
+          <img
+            src="https://i.ibb.co.com/fdwVNBtK/Group-45.png"
+            alt=""
+            class="mt-2"
+          />
+          <div class="flex gap-6 mt-2 justify-center">
+            <div class="rounded-lg p-2 bg-[#F4F6F8]">
+              <p class="text-lg">Minimum</p>
+              <p class="text-sm">$300</p>
+            </div>
+            <div class="rounded-lg p-2 bg-[#F4F6F8]">
+              <p class="text-lg">Maximum</p>
+              <p class="text-sm">$364500</p>
+            </div>
+          </div>
+        </div>
+        <!-- suburb -->
+        <div class="rounded-xl border border-[#E6E9ED] p-2">
+          <h1 class="text-lg font-bold my-1 border-b border-[#E6E9ED] pb-2">
+            Suburb
+          </h1>
+
+          <div class="mt-4 space-y-3 ">
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">Eshelby Drive, Cranbrook</p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">2- 6 Eshelby Dr, Cannonvale</p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">59/3 `111114
+                .Eshelby Drive Cannonvale</p>
+            </div>
+            
+          </div>
+        </div>
+        <!-- Property Type -->
+        <div class="rounded-xl border border-[#E6E9ED] p-2">
+          <h1 class="text-lg font-bold my-1 border-b border-[#E6E9ED] pb-2">
+            Property Type
+          </h1>
+
+          <div class="mt-4 space-y-3 ">
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">House</p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">Land </p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">Apartment</p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">Town House</p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">Vila</p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">Acreage</p>
+            </div>
+            
+          </div>
+        </div>
+        <!-- amenities -->
+        <div class="rounded-xl border border-[#E6E9ED] p-2">
+          <h1 class="text-lg font-bold my-1 border-b border-[#E6E9ED] pb-2">
+            Amenities
+          </h1>
+
+          <div class="mt-4 space-y-3 ">
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">Pet-friendly</p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">Parking</p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">Private Pool</p>
+            </div>
+            <div class="flex gap-2">
+              <input
+                type="checkbox"
+                class="checkbox  checked:bg-[#6C0443]
+                checked:text-white"
+              />
+              <p class="text-[16px]">Paly Ground</p>
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+      <!-- right  -->
+      <section class="w-full">
+        <section class="w-full grid gap-4 lg:grid-cols-2">
+          <!-- 1 -->
+          <div class="border border-[#E5E9EE] rounded-xl p-2">
+            <img
+              src="https://i.ibb.co.com/Mk9GdRZF/4bf37b98eb86ad16abc957e188b0891b873f8a72.jpg"
+              alt="loading"
+              class="w-107.5 h-65 rounded-2xl mx-auto"
+            />
+            <div
+              class="flex gap-8 my-2 text-[#00000080] opacity-50 text-sm lg:ml-3 ml-5"
+            >
+              <p>Bed-04</p>
+              <p>Bathroom-04</p>
+              <p>2500sft</p>
+            </div>
+            <h1 class="text-xl font-semibold lg:ml-3 ml-5">
+              Maple Grove Garden House
+            </h1>
+            <p class="lg:ml-3 ml-5">
+              <span class="text-lg"
+                >$280/ <span class="text-sm">week</span></span
+              >
+              <span class="text-[#00000080] opacity-50">New York,USA</span>
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="border border-[#E5E9EE] rounded-xl p-2">
+            <img
+              src="https://i.ibb.co.com/bRbcHmLf/6cf7f85ad87f1743f944fbc2f0b268feb495209c.jpg"
+              alt="loading"
+              class="w-107.5 h-65 rounded-2xl mx-auto"
+            />
+            <div
+              class="flex gap-8 my-2 text-[#00000080] opacity-50 text-sm lg:ml-3 ml-5"
+            >
+              <p>Bed-04</p>
+              <p>Bathroom-04</p>
+              <p>2500sft</p>
+            </div>
+            <h1 class="text-xl font-semibold lg:ml-3 ml-5">
+              Sunset Towers Eklosbet
+            </h1>
+            <p class="lg:ml-3 ml-5">
+              <span class="text-lg"
+                >$280/ <span class="text-sm">week</span></span
+              >
+              <span class="text-[#00000080] opacity-50">New York,USA</span>
+            </p>
+          </div>
+          <!-- 3 -->
+          <div class="border border-[#E5E9EE] rounded-xl p-2">
+            <img
+              src="https://i.ibb.co.com/JFvhQStr/3h.jpg"
+              alt="loading"
+              class="w-107.5 h-65 rounded-2xl mx-auto"
+            />
+            <div
+              class="flex gap-8 my-2 text-[#00000080] opacity-50 text-sm lg:ml-3 ml-5"
+            >
+              <p>Bed-04</p>
+              <p>Bathroom-04</p>
+              <p>2500sft</p>
+            </div>
+            <h1 class="text-xl font-semibold lg:ml-3 ml-5">
+              Riverside Retreat
+            </h1>
+            <p class="lg:ml-3 ml-5">
+              <span class="text-lg"
+                >$280/ <span class="text-sm">week</span></span
+              >
+              <span class="text-[#00000080] opacity-50">New York,USA</span>
+            </p>
+          </div>
+          <!-- 4 -->
+          <div class="border border-[#E5E9EE] rounded-xl p-2">
+            <img
+              src="https://i.ibb.co.com/M5kyg2Q4/4h.jpg"
+              alt="loading"
+              class="w-107.5 h-65 rounded-2xl mx-auto"
+            />
+            <div
+              class="flex gap-8 my-2 text-[#00000080] opacity-50 text-sm lg:ml-3 ml-5"
+            >
+              <p>Bed-04</p>
+              <p>Bathroom-04</p>
+              <p>2500sft</p>
+            </div>
+            <h1 class="text-xl font-semibold lg:ml-3 ml-5">Golden Meadows </h1>
+            <p class="lg:ml-3 ml-5">
+              <span class="text-lg"
+                >$280/ <span class="text-sm">week</span></span
+              >
+              <span class="text-[#00000080] opacity-50">New York,USA</span>
+            </p>
+          </div>
+          <!-- 5 -->
+          <div class="border border-[#E5E9EE] rounded-xl p-2">
+            <img
+              src="https://i.ibb.co.com/4wPNySKB/5h.jpg"
+              alt="loading"
+              class="w-107.5 h-65 rounded-2xl mx-auto"
+            />
+            <div
+              class="flex gap-8 my-2 text-[#00000080] opacity-50 text-sm lg:ml-3 ml-5"
+            >
+              <p>Bed-04</p>
+              <p>Bathroom-04</p>
+              <p>2500sft</p>
+            </div>
+            <h1 class="text-xl font-semibold lg:ml-3 ml-5">Ocean Sea Breeze</h1>
+            <p class="lg:ml-3 ml-5">
+              <span class="text-lg"
+                >$280/ <span class="text-sm">week</span></span
+              >
+              <span class="text-[#00000080] opacity-50">New York,USA</span>
+            </p>
+          </div>
+          <!-- 6 -->
+          <div class="border border-[#E5E9EE] rounded-xl p-2">
+            <img
+              src="https://i.ibb.co.com/Nd9QWDj8/6h.jpg"
+              alt="loading"
+              class="w-107.5 h-65 rounded-2xl mx-auto"
+            />
+            <div
+              class="flex gap-8 my-2 text-[#00000080] opacity-50 text-sm lg:ml-3 ml-5"
+            >
+              <p>Bed-04</p>
+              <p>Bathroom-04</p>
+              <p>2500sft</p>
+            </div>
+            <h1 class="text-xl font-semibold lg:ml-3 ml-5">
+              The Urban Nest Lofts
+            </h1>
+            <p class="lg:ml-3 ml-5">
+              <span class="text-lg"
+                >$280/ <span class="text-sm">week</span></span
+              >
+              <span class="text-[#00000080] opacity-50">New York,USA</span>
+            </p>
+          </div>
+        </section>
+        <!-- pagination -->
+        <section>
+          <div class="join gap-2 mt-4 flex justify-center items-center">
+            <button class="join-item btn rounded-lg">Previous</button>
+            <button class="join-item btn bg-[#6C0443] text-white rounded-lg">
+              1
+            </button>
+            <button class="join-item btn rounded-lg">2</button>
+            <button class="join-item btn rounded-lg">3</button>
+            <button class="join-item btn btn-disabled rounded-lg">...</button>
+            <button class="join-item btn rounded-lg">7</button>
+            <button class="join-item btn rounded-lg">8</button>
+            <button class="join-item btn rounded-lg">9</button>
+            <button class="join-item btn rounded-lg">10</button>
+            <button class="join-item btn rounded-lg">Next</button>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
